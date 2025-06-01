@@ -1,0 +1,63 @@
+body {
+  background-image: url(bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  font-family: sans-serif;
+  text-align: center;
+  color: rgba(1, 57, 71, 0.5);
+}
+.h {
+  font-size: 50px;
+}
+.three {
+  font-size: 30px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: white;
+}
+
+.pet {
+  background: rgba(1, 57, 71, 0.5);
+  padding: 15px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.pet img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  background: transparent;
+}
+
+.name {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.quality {
+  display: none;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.pet:hover .quality {
+  display: block;
+}
+
+.pet:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(1, 57, 71, 0.5);
+}
